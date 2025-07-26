@@ -6,11 +6,21 @@
 
 / {
     behaviors {
-        new_behavior: new_behavior {
+        backspace_word: backspace_word {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
+            label = "BACKSPACE_WORD";
             bindings = <&kp RIGHT_CONTROL>, <&kp BSPC>;
+
             //bindings = <&none>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        delete_word: delete_word {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DELETE_WORD";
+            bindings = <&kp LALT>, <&kp DEL>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
