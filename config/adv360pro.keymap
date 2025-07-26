@@ -9,8 +9,8 @@
         bspc_word_del: backspace_word_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp LGUI>; // Backspace on its own, Command (GUI) for the morph
-            mods = <LSHIFT>; // When the left Shift key is held
+            bindings = <&kp BACKSPACE>, <&kp LALT>; // Backspace on its own, Command (GUI) for the morph
+            mods = <LSHFT>; // When the left Shift key is held
             };
         // more behaviors here
         };
