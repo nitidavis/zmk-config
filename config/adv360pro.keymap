@@ -9,7 +9,8 @@
         new_behavior: new_behavior {
             compatible = "zmk,behavior-mod-morph";
             label = "NEW_BEHAVIOR";
-            bindings = <&none>, <&none>;
+            bindings = <&kp RIGHT_CONTROL>, <&kp BSPC>;
+            //bindings = <&none>, <&none>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
