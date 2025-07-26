@@ -9,7 +9,7 @@
         backspace_word: backspace_word {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_WORD";
-            bindings = <&kp RIGHT_CONTROL>, <&kp BSPC>;
+            bindings = <&kp BSPC>, <&kp LA(BSPC)>;
 
             //bindings = <&none>, <&none>;
 
@@ -20,8 +20,8 @@
         delete_word: delete_word {
             compatible = "zmk,behavior-mod-morph";
             label = "DELETE_WORD";
-            bindings = <&kp LALT>, <&kp DEL>;
-
+            bindings = <&kp DEL>, <&kp LA(DEL)>;
+//bindings = <&none>, <&none>;-
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
