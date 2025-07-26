@@ -10,7 +10,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp LGUI>; // Backspace on its own, Command (GUI) for the morph
-            mods = <MOD_LSFT>; // When the left Shift key is held
+            mods = <LSHIFT>; // When the left Shift key is held
             };
         // more behaviors here
         };
