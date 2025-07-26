@@ -5,28 +5,28 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    behaviors {
-        bspc_word_del: backspace_word_delete {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp LGUI>; // Backspace on its own, Command (GUI) for the morph
-            mods = <(MOD_LSFT|MOD_RSFT)>; // When Shift is held
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>; // Don't swallow the Shift key
-        };
+    //behaviors {
+      //  bspc_word_del: backspace_word_delete {
+        //    compatible = "zmk,behavior-mod-morph";
+          //  #binding-cells = <0>;
+        //    bindings = <&kp BACKSPACE>, <&kp LGUI>; // Backspace on its own, Command (GUI) for the morph
+         //   mods = <(MOD_LSFT|MOD_RSFT)>; // When Shift is held
+         //   keep-mods = <(MOD_LSFT|MOD_RSFT)>; // Don't swallow the Shift key
+        // };
 
-        del_word_right: delete_word_right {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
+ //       del_word_right: delete_word_right {
+   //         compatible = "zmk,behavior-mod-morph";
+     //       #binding-cells = <0>;
             // When Shift is held (MOD_LSFT or MOD_RSFT), Backspace (your "Delete" key)
             // will send Control+Delete (C_DEL).
-            bindings = <&kp DELETE>, <&kp C_DEL>;
-            mods = <(MOD_LSFT | MOD_RSFT)>;
+      //      bindings = <&kp DELETE>, <&kp C_DEL>;
+        //    mods = <(MOD_LSFT | MOD_RSFT)>;
             // Keep the Shift modifier if other actions require it (optional depending on desired behavior)
             // keep-mods = <(MOD_LSFT | MOD_RSFT)>;
-        };
+       // };
 
         // ... other behaviors
-    };
+   // };
 
     keymap {
         compatible = "zmk,keymap";
